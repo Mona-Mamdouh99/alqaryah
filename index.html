@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Al Qaryah Cars Auction</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+         (function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="KfUb8u7WEFqIrpuXOegOG";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
+    </script>
+
+
+</head>
+<body id="body">
+
+    <!-- HEADER -->
+    <header>
+        <div class="logo-container">
+            <!-- Ensure input_file_0.jpeg is in the same folder -->
+            <img src="img/logo.png" alt="ACA Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#" data-i18n="nav_home">Home</a></li>
+                <li><a href="#" data-i18n="nav_auctions">Auctions</a></li>
+                <li><a href="#" data-i18n="nav_about">About Us</a></li>
+                <li><a href="#" data-i18n="nav_contact">Contact</a></li>
+            </ul>
+        </nav>
+        <button class="lang-btn" onclick="toggleLanguage()" id="langBtn">عربي</button>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 data-i18n="hero_title">Find Your Dream Car</h1>
+            <p data-i18n="hero_subtitle">Premium cars, transparent bidding, unbeatable prices.</p>
+            <button class="cta-btn" data-i18n="cta_button">View Auctions</button>
+        </div>
+    </section>
+
+    <!-- SEARCH BAR -->
+    <div class="search-container">
+        <input type="text" class="search-input" placeholder="Make, Model, or Year..." data-i18n-placeholder="search_placeholder">
+        <button class="search-btn" data-i18n="search_btn">Search Cars</button>
+    </div>
+
+    <!-- FEATURED CARS -->
+    <section class="featured">
+        <div class="section-header">
+            <h2 data-i18n="featured_title">Latest Arrivals</h2>
+            <div class="divider"></div>
+        </div>
+
+        <div class="cars-grid">
+            <!-- Car 1 -->
+            <div class="car-card">
+                <div class="car-img" style="background-image: url('https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=500&q=80')"></div>
+                <div class="car-details">
+                    <h3 class="car-title">2023 Chevrolet Camaro</h3>
+                    <span class="car-price" data-i18n="bid_current">Current Bid: $25,000</span>
+                    <div class="car-meta">
+                        <span>2023</span>
+                        <span data-i18n="car_automatic">Automatic</span>
+                        <span>12,000 KM</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Car 2 -->
+            <div class="car-card">
+                <div class="car-img" style="background-image: url('https://images.unsplash.com/photo-1617788138017-80ad40651399?auto=format&fit=crop&w=500&q=80')"></div>
+                <div class="car-details">
+                    <h3 class="car-title">2022 Toyota Land Cruiser</h3>
+                    <span class="car-price" data-i18n="bid_current">Current Bid: $55,000</span>
+                    <div class="car-meta">
+                        <span>2022</span>
+                        <span data-i18n="car_automatic">Automatic</span>
+                        <span>5,000 KM</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Car 3 -->
+            <div class="car-card">
+                <div class="car-img" style="background-image: url('https://images.unsplash.com/photo-1583121274602-3e2820c69888?auto=format&fit=crop&w=500&q=80')"></div>
+                <div class="car-details">
+                    <h3 class="car-title">2021 Mercedes-Benz C-Class</h3>
+                    <span class="car-price" data-i18n="bid_current">Current Bid: $32,000</span>
+                    <div class="car-meta">
+                        <span>2021</span>
+                        <span data-i18n="car_automatic">Automatic</span>
+                        <span>28,000 KM</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-logo">AL QARYAH CARS AUCTION</div>
+        <p data-i18n="footer_desc">The most trusted car auction platform in the region.</p>
+        <div class="copyright">
+            &copy; 2026 ACA. All Rights Reserved.
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT FOR TRANSLATION -->
+    <script>
+        // Translation Dictionary
+        const translations = {
+            en: {
+                nav_home: "Home",
+                nav_auctions: "Auctions",
+                nav_about: "About Us",
+                nav_contact: "Contact",
+                hero_title: "Find Your Dream Car",
+                hero_subtitle: "Premium cars, transparent bidding, unbeatable prices.",
+                cta_button: "View Auctions",
+                search_placeholder: "Make, Model, or Year...",
+                search_btn: "Search Cars",
+                featured_title: "Latest Arrivals",
+                bid_current: "Current Bid",
+                car_automatic: "Automatic",
+                footer_desc: "The most trusted car auction platform in the region."
+            },
+            ar: {
+                nav_home: "الرئيسية",
+                nav_auctions: "المزادات",
+                nav_about: "من نحن",
+                nav_contact: "اتصل بنا",
+                hero_title: "اعثر على سيارة أحلامك",
+                hero_subtitle: "سيارات مميزة، مزايدة شفافة، وأسعار لا تقبل المنافسة.",
+                cta_button: "تصفح المزادات",
+                search_placeholder: "النوع، الموديل، أو السنة...",
+                search_btn: "بحث",
+                featured_title: "أحدث الوصولات",
+                bid_current: "السعر الحالي",
+                car_automatic: "أوتوماتيك",
+                footer_desc: "منصة مزادات السيارات الأكثر ثقة في المنطقة."
+            }
+        };
+
+        let currentLang = 'en';
+
+        function toggleLanguage() {
+            const body = document.getElementById('body');
+            const langBtn = document.getElementById('langBtn');
+
+            // Switch Language State
+            if (currentLang === 'en') {
+                currentLang = 'ar';
+                body.classList.add('rtl'); // Add RTL class for CSS
+                langBtn.textContent = 'English';
+            } else {
+                currentLang = 'en';
+                body.classList.remove('rtl');
+                langBtn.textContent = 'عربي';
+            }
+
+            // Update Text Content
+            updateContent();
+        }
+
+        function updateContent() {
+            // Select all elements with data-i18n attribute
+            const elements = document.querySelectorAll('[data-i18n]');
+            
+            elements.forEach(element => {
+                const key = element.getAttribute('data-i18n');
+                if (translations[currentLang][key]) {
+                    element.textContent = translations[currentLang][key];
+                }
+            });
+
+            // Handle Placeholders specifically
+            const inputs = document.querySelectorAll('[data-i18n-placeholder]');
+            inputs.forEach(input => {
+                const key = input.getAttribute('data-i18n-placeholder');
+                if (translations[currentLang][key]) {
+                    input.placeholder = translations[currentLang][key];
+                }
+            });
+        }
+    </script>
+</body>
+</html>
